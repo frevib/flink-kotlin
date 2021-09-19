@@ -8,9 +8,9 @@ Then use the following APIs from `com.eventloopsoftware.flink.streaming.kotlin`
 
 [`StreamExecutionEnvironment`](flink-streaming-kotlin/src/main/kotlin/com/eventloopsoftware/flink/streaming/kotlin/StreamExecutionEnvironment.kt)
 
-[`DataStream`](kotlin/com/eventloopsoftware/flink/streaming/kotlin/KeyedStream.kt)
+[`DataStream`](flink-streaming-kotlin/src/main/kotlin/com/eventloopsoftware/flink/streaming/kotlin/KeyedStream.kt)
 
-[`KeyedDataStream`](kotlin/com/eventloopsoftware/flink/streaming/kotlin/DataStream.kt)
+[`KeyedDataStream`](flink-streaming-kotlin/src/main/kotlin/com/eventloopsoftware/flink/streaming/kotlin/DataStream.kt)
 
 
 ### Versions
