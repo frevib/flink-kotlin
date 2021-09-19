@@ -6,7 +6,7 @@ An attempt to fix Kotlin lambdas in Apache Flink
 
 Then use the following APIs from `com.eventloopsoftware.flink.streaming.kotlin`
 
-[`StreamExecutionEnvironment`](kotlin/com/eventloopsoftware/flink/streaming/kotlin/StreamExecutionEnvironment.kt)
+[`StreamExecutionEnvironment`](flink-streaming-kotlin/src/main/kotlin/com/eventloopsoftware/flink/streaming/kotlin/StreamExecutionEnvironment.kt)
 
 [`DataStream`](kotlin/com/eventloopsoftware/flink/streaming/kotlin/KeyedStream.kt)
 
@@ -16,6 +16,6 @@ Then use the following APIs from `com.eventloopsoftware.flink.streaming.kotlin`
 ### Versions
 #### v0.1
 
-* Datastream example work with this library
+* Datastream example works with this library:
 
 https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/learn-flink/datastream_api/
