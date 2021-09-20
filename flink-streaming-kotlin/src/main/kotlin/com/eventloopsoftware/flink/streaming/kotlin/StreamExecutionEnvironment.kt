@@ -8,9 +8,8 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment as 
 
 class StreamExecutionEnvironment(val javaEnv: JavaEnv) {
 
-    inline fun <reified T> addSource(function: SourceFunction<T>): DataStream<T> {
-        return DataStream<T>(javaEnv.addSource(function, TypeInformation.of(T::class.java)))
-    }
+    inline fun <reified T> addSource(function: SourceFunction<T>): DataStream<T> =
+        DataStream<T>(javaEnv.addSource(function, TypeInformation.of(T::class.java)))
 
     fun execute(jobName: String): JobExecutionResult = javaEnv.execute(jobName)
 
