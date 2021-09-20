@@ -14,11 +14,8 @@ import org.apache.flink.streaming.api.datastream.KeyedStream as JavaKeyedStream
 
 open class DataStream<T>(val stream: JavaStream<T>) {
 
-    fun <T> name(name: String): DataStream<T> = when (stream) {
-        // Need to check if stream is of generic type, now there is an unsafe cast.
-        // More info: https://stackoverflow.com/questions/33146160/how-to-check-generic-type-in-kotlin
-        is SingleOutputStreamOperator -> DataStream<T>(stream.name(name)
-                as org.apache.flink.streaming.api.datastream.DataStream<T>)
+    fun name(name: String): DataStream<T> = when (stream) {
+        is SingleOutputStreamOperator -> DataStream(stream.name(name))
         else -> throw UnsupportedOperationException("Only supported for operators.")
     }
 
